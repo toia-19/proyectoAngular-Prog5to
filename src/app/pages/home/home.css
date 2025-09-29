@@ -1,0 +1,19 @@
+/* Título llamado por ID */
+#title{
+    font-size: 35px;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* 
+    1rem = 16px
+*/
+.card{
+    margin-top: 3rem;
+}
+
+/* Botón llamado por CLASE */
+.btn-action{
+    background-color: coral;
+    color: white;
+}

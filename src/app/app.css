@@ -1,0 +1,18 @@
+/* Por ID */
+/* 
+    #navegador{
+        background-color: coral;
+    }
+*/
+
+/* Sobreescribir */
+/*
+    .navegador{
+        background-color: coral !important;
+    }
+*/
+
+/* Por CLASE */
+.navbar {
+    background-color: coral;
+}
