@@ -1,0 +1,14 @@
+/* 1rem = 16px */
+#title{
+    text-align: center;
+    margin: 1rem;
+}
+
+.btn-action{
+    background-color: coral;
+    color: white;
+}
+
+.btn-action:hover{
+    background-color: crimson;
+}
