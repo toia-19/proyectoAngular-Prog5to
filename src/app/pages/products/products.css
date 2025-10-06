@@ -1,0 +1,40 @@
+.title {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    /* 1rem = 16px */
+    padding: 1rem;
+}
+
+img {
+    height: 8rem;
+
+    /* Propiedad para ajustar tamaño al contenido y mantener la calidad */
+    object-fit: cover;
+}
+
+/* Pantalla de computadora */
+@media (min-width: 751px) {
+    .card {
+        width: 18rem;
+    }
+
+    .title {
+        color: red;
+    }
+}
+
+/* Pantalla de celular */
+@media (max-width: 750px) {
+    .card {
+        width: 9rem;
+    }
+
+    .title {
+        color: green;
+    }
+}

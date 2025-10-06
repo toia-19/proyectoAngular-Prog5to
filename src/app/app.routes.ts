@@ -8,7 +8,7 @@ export const routes: Routes = [
     {
         /* Definimos ruta principal o raíz en 
         específico que nos lleve a la ruta Home */
-        path: "**", component: Home
+        path: "", component: Home
     },
     {
         path: "home", component: Home
