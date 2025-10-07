@@ -20,7 +20,7 @@ img {
 /* Pantalla de computadora */
 @media (min-width: 751px) {
     .card {
-        width: 18rem;
+        width: 16rem;
     }
 
     .title {
