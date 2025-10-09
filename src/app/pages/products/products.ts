@@ -21,6 +21,7 @@ export class Products {
     - Tipo alfanumérico (string) inicializa en ""
     - Tipo numérico (number) inicializa en 0
   */
+
   constructor(){
     this.infoTarjeta = [
       {
@@ -56,5 +57,13 @@ export class Products {
         anualPublicacion: 2022
       }
     ]
+  }
+
+  /* Variable para tomar una tarjeta seleccionada */
+  tarjetaSeleccionada: any = null;
+
+  /* Recibe el elemento seleccionado por parámetro y lo asigna a "tarjetaSeleccionada" */
+  verMas(tarjeta: any){
+    this.tarjetaSeleccionada = tarjeta;
   }
 }
