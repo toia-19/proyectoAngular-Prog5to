@@ -25,7 +25,7 @@ export class Products {
   constructor(){
     this.infoTarjeta = [
       {
-        id: "1T",
+        id: 1,
         img: "../../../assets/pexels-apasaric-2481670.jpg",
         alt: "Foto de paisaje en China",
         titulo: "Paisaje",
@@ -33,7 +33,7 @@ export class Products {
         anualPublicacion: 2025
       },
       {
-        id: "2T",
+        id: 2,
         img: "../../../assets/pexels-magda-ehlers-pexels-2846034.jpg",
         alt: "Foto de estatua en China",
         titulo: "Estatua",
@@ -41,7 +41,7 @@ export class Products {
         anualPublicacion: 2024
       },
       {
-        id: "3T",
+        id: 3,
         img: "../../../assets/pexels-ruiyang-zhang-915467-3204950.jpg",
         alt: "Foto de templo en China",
         titulo: "Templo",
@@ -49,7 +49,7 @@ export class Products {
         anualPublicacion: 2023
       },
       {
-        id: "4T",
+        id: 4,
         img: "../../../assets/pexels-zhangkaiyv-189833.jpg",
         alt: "Foto de paisaje chino",
         titulo: "Paisaje",
