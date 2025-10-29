@@ -1,14 +1,40 @@
 /* 1rem = 16px */
-#title{
+#title {
     text-align: center;
     margin: 1rem;
 }
 
-.btn-action{
+.btn-action {
     background-color: coral;
     color: white;
 }
 
-.btn-action:hover{
+.btn-action:hover {
     background-color: crimson;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 10rem;
+
+    /* Propiedad para ajustar el contenido y mantener la calidad de imágenes */
+    object-fit: cover;
+}
+
+/* Pantalla de computadora -> LG */
+@media (min-width: 751px) {
+    #title {
+        color: red;
+    }
+}
+
+/* Pantalla media/ chica -> md, sm */
+@media (max-width: 750px) {
+    #title {
+        color: green;
+    }
 }
