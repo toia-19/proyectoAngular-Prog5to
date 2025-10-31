@@ -30,7 +30,7 @@
                         {{ i.descripcion }}
                     </p>
                     <p class="card-text">
-                        {{ i.fechaPostal }} - ${{ i.precio }}
+                        {{ i.fechaPostal | date: 'yy/MM/dd' }} - ${{ i.precio }}
                     </p>
 
                     <a href="#" class="btn btn-action">Ver más</a>

@@ -31,6 +31,7 @@ export class Products {
         titulo: "Border Collie",
         descripcion: "Foto de un border collie",
         precio: 2000,
+        /* new Date ('mes-dia-año') */
         fechaPostal: new Date('2020-12-1'),
         img: "https://images.pexels.com/photos/28645781/pexels-photo-28645781.jpeg",
         alt: "Postal de un border collie",

@@ -19,5 +19,5 @@ export interface Tarjeta {
     precio: number; // number <- valores numéricos
     fechaPostal: Date;
     img: string;
-    alt: string;
+    alt?: string; // ? <- indica que no es una propiedad obligatoria
 }
