@@ -30,7 +30,8 @@ export class Products {
         alt: "Foto de paisaje en China",
         titulo: "Paisaje",
         descripcion: "Foto tomada en un paisaje chino",
-        anualPublicacion: 2025
+        anualPublicacion: 2025,
+        fechaExacta: new Date('12/12-2025')
       },
       {
         id: 2,

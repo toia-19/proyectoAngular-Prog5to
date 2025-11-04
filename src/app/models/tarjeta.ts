@@ -9,4 +9,5 @@ export interface Tarjeta {
     titulo: string;
     descripcion: string;
     anualPublicacion: number; // acepta SOLO números -> ej.: 1, 2020, 1234
+    fechaExacta?: Date;
 }

@@ -1,26 +1,29 @@
 <div class="container">
     <h2>Nuevo Producto</h2>
 
-    <!-- Inserto etiqueta "formGroup" para crear un 
-     formulario y la igualo a su nombre -->
-    <form [formGroup]="">
+    <!-- Etiqueta "formGroup" para crear un formulario y la igualo a su nombre 
+     [formGroup] -> DIRECTIVA de formularios reactivos -->
+    <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()">
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
-            <input id="nombre" type="text" class="form-control">
+            <!-- formControlName -> atributo que vincule con la información de mi propiedad -->
+            <input id="nombre" type="text" class="form-control" formControlName="nombre">
         </div>
 
         <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripción</label>
+            <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
         </div>
 
         <div class="mb-3">
             <label for="precio" class="form-label">Precio</label>
-            <input id="precio" type="number" class="form-control">
+            <input id="precio" type="number" class="form-control" formControlName="precio">
         </div>
 
-        <div class="mb-3">
-        </div>
-
-        <div class="mb-3">
-        </div>
+        <!--
+        El botón se deshabilita cuando el "nuevoProducto" no es válido
+         ej.: faltan campos por rellenar o no cumplen el valor esperado
+         -->
+        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Guardar</button>
     </form>
 </div>
