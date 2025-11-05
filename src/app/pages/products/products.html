@@ -33,8 +33,46 @@
                         {{ i.fechaPostal | date: 'yy/MM/dd' }} - ${{ i.precio }}
                     </p>
 
-                    <a href="#" class="btn btn-action">Ver más</a>
+                    <!-- Botón para activar modal -->
+                    <!-- Enviamos por parámetro del evento "click" a un elemento seleccionado de la colección -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMas"
+                        (click)="verMas(i)">
+                        Ver más
+                    </button>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal BIDIRECCIONAL -->
+<div class="modal fade" id="verMas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- ? -> admite propiedades de la variable -->
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{ productoSeleccionado?.titulo }}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Imagen del modal -->
+                <div class="modal-img">
+                    <img src="{{ productoSeleccionado?.img }}" alt="{{ productoSeleccionado?.alt }}">
+                </div>
+
+                <!-- Descripción del modal -->
+                <div class="modal-info">
+                    <p>{{ productoSeleccionado?.descripcion }}</p>
+
+                    <p>
+                        {{ productoSeleccionado?.fechaPostal | date: 'yy/MM/dd' }} - ${{ productoSeleccionado?.precio }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>

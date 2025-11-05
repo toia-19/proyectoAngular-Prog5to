@@ -65,4 +65,17 @@ export class Products {
       },
     ]
   }
+
+  // Variable para obtener los datos de un producto o una tarjeta seleccionada
+  // any -> NO va a tener restricción y admite cualquier tipo
+  productoSeleccionado: any = null;
+
+  /**
+   * @description Método para ver más información de un producto.
+   * Recibe como parámetro un producto de tipo "any" y lo asigna a la variable
+   * "productoSeleccionado"
+   */
+  verMas(producto: any){
+    this.productoSeleccionado = producto;
+  }
 }
