@@ -17,7 +17,7 @@ export interface Tarjeta {
     titulo: string; // string <- valores alfanumericos (letras y números)
     descripcion: string;
     precio: number; // number <- valores numéricos
-    fechaPostal: Date;
-    img: string;
+    fechaPostal?: Date;
+    img?: string;
     alt?: string; // ? <- indica que no es una propiedad obligatoria
 }
