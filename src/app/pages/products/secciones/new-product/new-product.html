@@ -27,3 +27,9 @@
         <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Guardar</button>
     </form>
 </div>
+
+<div class="container">
+    <ul class="list-group" *ngFor="let producto of coleccionProductos">
+        <li class="list-group-item">{{ producto.nombre }}</li>
+    </ul>
+</div>

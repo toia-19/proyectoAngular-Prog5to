@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Producto } from '../../../../models/producto';
+import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 /* 
   FormControl = Controlador de cada dato ingresado en el formulario
@@ -10,7 +11,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 
 @Component({
   selector: 'app-new-product',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './new-product.html',
   styleUrl: './new-product.css'
 })
@@ -54,6 +55,8 @@ export class NewProduct {
 
       /* Agregamos nuevo producto a colección de productos */
       this.coleccionProductos.push(nuevoProducto);
+
+      alert("¡Se creo el nuevo producto con éxito! Nombre de producto: \n"+nuevoProducto.nombre)
 
       console.log("Producto agregado: ", nuevoProducto);
       console.log("Colección actual de productos: ", this.coleccionProductos);
