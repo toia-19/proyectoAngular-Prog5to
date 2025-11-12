@@ -3,7 +3,7 @@
 
     <!-- Insertamos directiva formGroup en etique 'form' para crear 
      y vincular un formulario reactivo -->
-    <form [formGroup]="nuevoProducto" (ngSubmit)="crearTarjeta()">
+    <form [formGroup]="formularioTarjeta" (ngSubmit)="crearTarjeta()">
         <div class="mb-3">
             <label for="titulo" class="form-label">Titulo</label>
             <!-- formControlName -> obtiene el valor individual de cada dato ingresado -->
@@ -22,6 +22,10 @@
 
         <!-- El botón se va a deshabilitar (disabled) cuando el formulario "nuevoProducto" 
          no sea válido ("!"). Ej.: Faltan rellenar campos -->
-        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Agregar</button>
+        <button type="submit" class="btn btn-primary w-100" [disabled]="!formularioTarjeta.valid">Agregar</button>
     </form>
+
+    <ul class="list-group" *ngFor="let tarjeta of coleccionTarjetas">
+        <li class="list-group-item">{{ tarjeta.titulo }} - {{ tarjeta.precio }}</li>
+    </ul>
 </div>

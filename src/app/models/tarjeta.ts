@@ -13,7 +13,7 @@
 */
 
 export interface Tarjeta {
-    id: number;
+    id: number | string; // "|" <- "o": ID puede ser NUMBER o STRING
     titulo: string; // string <- valores alfanumericos (letras y números)
     descripcion: string;
     precio: number; // number <- valores numéricos
